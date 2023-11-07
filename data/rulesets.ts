@@ -2676,4 +2676,16 @@ export const Rulesets: {[k: string]: FormatData} = {
 		},
 		// Implemented in Pokemon#getDetails
 	},
+
+	//Mod to make all moves 100% accurate
+	nohaxmod: {
+		effectType: 'Rule',
+		name: "All moves will hit mod",
+		onBegin() {
+			this.add('rule', 'All moves are 100% accurate');
+		},
+		onModifyMove(move) {
+			move.accuracy = true
+		},
+	}, 
 };

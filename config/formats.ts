@@ -893,6 +893,13 @@ export const Formats: FormatList = [
 		column: 2,
 	},
 	{
+		name: "[Gen 7] haxfree sm UU", //I created this one. All moves will be 100% accurate
+
+		mod: 'gen7',
+		ruleset: ['[Gen 7] OU','nohaxmod'],
+		banlist: ['OU', 'UUBL'],
+	},
+	{
 		name: "[Gen 9] Almost Any Ability",
 		desc: `Pok&eacute;mon have access to almost any ability.`,
 		threads: [
